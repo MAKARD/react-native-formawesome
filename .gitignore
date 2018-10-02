@@ -13,3 +13,5 @@ build/
 .nyc_output/
 .vscode/
 .coverage
+__tests__/
+coverage

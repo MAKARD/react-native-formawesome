@@ -4,11 +4,11 @@
   "description": "-",
   "main": "src/index.js",
   "scripts": {
-    "test": "echo \"No test specified\" && exit 0",
+    "test": "./node_modules/.bin/jest --detectOpenHandles --forceExit",
     "build": "npm run flow",
     "lint": "./node_modules/.bin/eslint .",
     "flow": "./node_modules/.bin/flow",
-    "precommit": "npm run lint && npm run flow && npm run test",
+    "stage": "npm run lint && npm run flow",
     "postinstall": "./node_modules/.bin/flow-typed install --libdefDir ./node_modules/@flow-typed"
   },
   "repository": {
@@ -40,7 +40,8 @@
     "prop-types": "^15.6.2",
     "react": "^16.5.2",
     "react-native": "^0.57.1",
-    "react-test-renderer": "^15.6.1"
+    "react-test-renderer": "^16.5.2",
+    "schedule": "^0.4.0"
   },
   "peerDependencies": {
     "react": "^16.5.2",
@@ -50,22 +51,23 @@
   "jest": {
     "notify": true,
     "preset": "react-native",
-    "testRegex": "/tests/**/*.spec.js$",
-    "coverageDirectory": ".coverage/",
+    "coverageDirectory": "./coverage/",
     "collectCoverage": true,
     "coverageReporters": [
       "lcov"
     ],
     "collectCoverageFrom": [
-      "src/**/*.js",
-      "src/**/*.jsx"
+      "src/**/*.js"
     ],
-    "coverageIgnorePatterns": [
-      "core.js"
+    "coveragePathIgnorePatterns": [
+      "/core.js",
+      "/core-types.js",
+      "/node_modules/"
     ]
   },
   "pre-commit": [
-    "precommit"
+    "stage",
+    "test"
   ],
   "dependencies": {
     "@babel/runtime": "^7.1.2",

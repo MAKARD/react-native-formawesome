@@ -18,3 +18,5 @@ node_modules/
 .package-lock.json
 .watchmanconfig
 .babelrc
+__tests__
+coverage
