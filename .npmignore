@@ -12,3 +12,9 @@ tests/
 node_modules/
 .travis.yml
 .coverage
+.core-types.js
+.flowconfig
+.gitignore
+.package-lock.json
+.watchmanconfig
+.babelrc

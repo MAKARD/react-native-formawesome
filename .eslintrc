@@ -1,0 +1,67 @@
+{
+    "parser": "babel-eslint",
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended",
+        "plugin:flowtype/recommended"
+    ],
+    "plugins": [
+        "react",
+        "flowtype"
+    ],
+    "rules": {
+        "jsx-alignment": true,
+        "jsx-equals-spacing": [
+            true,
+            "never"
+        ],
+        "no-submodule-imports": false,
+        "no-var-requires": false,
+        "no-implicit-dependencies": false,
+        "jsx-key": true,
+        "jsx-no-bind": true,
+        "jsx-no-lambda": true,
+        "jsx-boolean-value": false,
+        "jsx-no-string-ref": true,
+        "jsx-self-close": true,
+        "jsx-wrap-multiline": true,
+        "no-magic-numbers": 2,
+        "no-reference": true,
+        "curly": 2,
+        "await-promise": true,
+        "no-empty": 2,
+        "no-floating-promises": false,
+        "no-invalid-this": 2,
+        "no-null-keyword": false,
+        "no-var-keyword": true,
+        "triple-equals": true,
+        "no-object-literal-type-assertion": false,
+        "max-classes-per-file": [
+            2,
+            1
+        ],
+        "max-file-line-count": [
+            true,
+            200
+        ],
+        "no-default-export": true,
+        "prefer-const": 2,
+        "space-before-function-paren": 0,
+        "only-arrow-functions": false,
+        "trailing-comma": [
+            true,
+            {
+                "multiline": {
+                    "functions": "never"
+                },
+                "singleline": "never"
+            }
+        ],
+        "semicolon": false,
+        "class-name": true,
+        "space-within-parens": false,
+        "object-literal-sort-keys": false,
+        "ordered-imports": false,
+        "no-unused-expression": false
+    }
+}
