@@ -1,0 +1,64 @@
+{
+  "name": "react-native-formawesome",
+  "version": "0.0.0",
+  "description": "-",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "",
+    "build": "",
+    "lint": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MAKARD/react-native-formawesome"
+  },
+  "keywords": [
+    "-"
+  ],
+  "author": "Makarenko Dmitry",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/MAKARD/react-native-formawesome/issues"
+  },
+  "homepage": "https://github.com/MAKARD/react-native-formawesome",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-preset-react-native": "^4.0.1",
+    "codecov": "^3.1.0",
+    "jest": "^23.6.0",
+    "pre-commit": "^1.2.2",
+    "prop-types": "^15.6.2",
+    "react": "^16.5.2",
+    "react-native": "^0.57.1",
+    "react-test-renderer": "^15.6.1"
+  },
+  "peerDependencies": {
+    "react": "^16.5.2",
+    "prop-types": "^15.6.2",
+    "react-native": "^0.57.1"
+  },
+  "jest": {
+    "notify": true,
+    "preset": "react-native",
+    "testRegex": "/tests/**/*.spec.js$",
+    "coverageDirectory": ".coverage/",
+    "collectCoverage": true,
+    "coverageReporters": [
+      "lcov"
+    ],
+    "collectCoverageFrom": [
+      "src/**/*.js",
+      "src/**/*.jsx"
+    ],
+    "coverageIgnorePatterns": [
+      "core.js"
+    ]
+  },
+  "pre-commit": [
+    "lint",
+    "test"
+  ],
+  "dependencies": {
+    "react-formawesome-core": "0.0.1-3"
+  }
+}
