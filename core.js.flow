@@ -17,26 +17,26 @@ interface Validator {
 
     dropToDefaults: () => void;
     setDefaults: (defaults: UncertainObject) => void;
-    validate: (groups: ?Array<string>) => Promise<void>;
+    validate: (groups?: ?Array<string>) => Promise<void>;
     setModelValue: (attribute: string, value: any) => void;
     addErrors: (errors: Array<{attribute: string; details: string}>) => void; 
 }
 
 interface InstantiableValidator<P> {
-    constructor(target: P, defaults: ?UncertainObject): Validator;
+    constructor(target: P, defaults?: ?UncertainObject): Validator;
 }
 
 interface FormProviderProps {
     validator: Validator;
     onSubmit: () => Promise<any>;
-    errorPareser: ?(error: any) => boolean;
+    errorPareser?: ?(error: any) => boolean;
 }
 
 type Event = "change" | "focus" | "blur";
 
 interface FormGroupProviderProps {
     attribute: string;
-    validateOn: ?Event | ?((values: UncertainObject, errors: UncertainObject) => boolean);
+    validateOn?: ?Event | ?(values: UncertainObject, errors: UncertainObject) => boolean;
 }
 
 declare export var FormProviderPropTypes: $Subtype<{[_: $Keys<FormProviderProps>]: any}>;

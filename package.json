@@ -8,6 +8,7 @@
     "build": "npm run flow",
     "lint": "./node_modules/.bin/eslint .",
     "flow": "./node_modules/.bin/flow",
+    "precommit": "npm run lint && npm run flow && npm run test",
     "postinstall": "./node_modules/.bin/flow-typed install --libdefDir ./node_modules/@flow-typed"
   },
   "repository": {
@@ -64,9 +65,7 @@
     ]
   },
   "pre-commit": [
-    "lint",
-    "flow",
-    "test"
+    "precommit"
   ],
   "dependencies": {
     "@babel/runtime": "^7.1.2",

@@ -17,26 +17,26 @@ declare module "react-formawesome-core" {
 
         dropToDefaults: () => void;
         setDefaults: (defaults: UncertainObject) => void;
-        validate: (groups: ?Array<string>) => Promise<void>;
+        validate: (groups?: ?Array<string>) => Promise<void>;
         setModelValue: (attribute: string, value: any) => void;
         addErrors: (errors: Array<{attribute: string; details: string}>) => void; 
     }
 
     declare export interface InstantiableValidator<P> {
-        constructor(target: P, defaults: ?UncertainObject): Validator;
+        constructor(target: P, defaults?: ?UncertainObject): Validator;
     }
 
     declare export interface FormProviderProps {
         validator: Validator;
         onSubmit: () => Promise<any>;
-        errorParser: ?(error: any) => boolean;
+        errorParser?: ?(error: any) => boolean;
     }
 
     declare export type Event = "change" | "focus" | "blur";
 
-    declare export type FormGroupProviderProps = {
+    declare export interface FormGroupProviderProps {
         attribute: string;
-        validateOn: ?Event | ?((values: UncertainObject, errors: UncertainObject) => boolean);
+        validateOn?: ?Event | ?(values: UncertainObject, errors: UncertainObject) => boolean;
     }
 
     declare export var FormProviderPropTypes: $Subtype<{[_: $Keys<FormProviderProps>]: any}>;
