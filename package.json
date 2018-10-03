@@ -10,7 +10,7 @@
     "flow": "./node_modules/.bin/flow",
     "stage": "npm run lint && npm run flow",
     "prepublishOnly": "npm run stage && npm run test",
-    "postinstall": "./node_modules/.bin/flow-typed install --libdefDir ./node_modules/@flow-typed"
+    "install:types": "./node_modules/.bin/flow-typed install --libdefDir ./node_modules/@flow-typed"
   },
   "repository": {
     "type": "git",
