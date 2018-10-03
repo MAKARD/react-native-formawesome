@@ -1,6 +1,6 @@
 // @flow
 import PropTypes from "prop-types";
-import { ViewStyle, TextInputProps } from "react-native";
+import type { ViewStyle, TextInputProps } from "react-native";
 
 export interface InputProps extends TextInputProps {
     onFocusStyles?: ?ViewStyle;

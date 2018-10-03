@@ -1,6 +1,6 @@
 // @flow
 import * as React from "react";
-import { ViewProps } from "react-native";
+import type { ViewProps } from "react-native";
 import { FormProviderPropTypes } from "react-formawesome-core";
 import type { FormProviderProps } from "react-formawesome-core";
 

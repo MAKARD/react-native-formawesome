@@ -4,7 +4,7 @@ import { View } from "react-native";
 import renderer from "react-test-renderer";
 import { ModelValidator } from "react-formawesome-core";
 
-import { Form, FormGroup} from "../src";
+import { Form, FormGroup } from "../src";
 
 class Model {
     name = undefined;
