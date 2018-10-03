@@ -1,5 +1,5 @@
 // @flow
-import React from "react";
+import * as React from "react";
 import { View } from "react-native";
 import { FormProvider } from "react-formawesome-core";
 
@@ -9,7 +9,7 @@ import type { FormProps } from "./FormProps";
 export class Form extends React.Component<FormProps> {
     static propTypes = FormPropTypes;
     
-    render() {
+    render(): React.Node {
         const { onSubmit, errorParser, validator, ...viewProps } = this.props;
 
         return (

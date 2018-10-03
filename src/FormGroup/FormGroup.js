@@ -1,5 +1,5 @@
 // @flow
-import React from "react";
+import * as React from "react";
 import { View } from "react-native";
 import { FormGroupProvider } from "react-formawesome-core";
 
@@ -9,7 +9,7 @@ import type { FormGroupProps } from "./FormGroupProps";
 export class FormGroup extends React.Component<FormGroupProps> {
     static propTypes = FormGroupPropTypes;
 
-    render() {
+    render(): React.Node {
         const { validateOn, attribute ,...viewProps } = this.props;
 
         return (

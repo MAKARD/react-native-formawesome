@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should render correctly 1`] = `
+<View>
+  <View>
+    <TextInput
+      allowFontScaling={true}
+      onBlur={[Function]}
+      onChangeText={[Function]}
+      onErrorStyles={Object {}}
+      onFocus={[Function]}
+      onFocusStyles={Object {}}
+      style={Object {}}
+      underlineColorAndroid="transparent"
+    />
+  </View>
+</View>
+`;
