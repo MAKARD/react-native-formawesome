@@ -53,20 +53,22 @@ export class Input extends React.Component<InputProps> {
     }
 
     getStyle = (context: FormGroupContextInterface) => {
+        let style = this.props.style;
+
         if (context.isFocused) {
-            return {
-                ...this.props.style,
+            style = {
+                ...style,
                 ...this.props.onFocusStyles
             };
         }
 
         if (context.error) {
-            return {
-                ...this.props.style,
+            style = {
+                ...style,
                 ...this.props.onErrorStyles
             };
         }
 
-        return this.props.style;
+        return style;
     }
 }
