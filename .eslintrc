@@ -7,7 +7,8 @@
     ],
     "plugins": [
         "react",
-        "flowtype"
+        "flowtype",
+        "babel"
     ],
     "rules": {
         "jsx-alignment": true,
@@ -15,6 +16,8 @@
             true,
             "never"
         ],
+        "no-unused-vars": 0,
+        "react/jsx-uses-vars": 2,
         "no-submodule-imports": false,
         "no-var-requires": false,
         "no-implicit-dependencies": false,
@@ -31,7 +34,8 @@
         "await-promise": true,
         "no-empty": 2,
         "no-floating-promises": false,
-        "no-invalid-this": 2,
+        "no-invalid-this": 0,
+        "babel/no-invalid-this": 2,
         "no-null-keyword": false,
         "no-var-keyword": true,
         "triple-equals": true,
@@ -44,6 +48,7 @@
             true,
             200
         ],
+        "no-multiple-empty-lines": 2,
         "no-default-export": true,
         "prefer-const": 2,
         "space-before-function-paren": 0,
