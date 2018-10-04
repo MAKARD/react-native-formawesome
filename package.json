@@ -1,7 +1,7 @@
 {
   "name": "react-native-formawesome",
   "version": "0.0.1-4",
-  "description": "-",
+  "description": "React-Native UI lib for validation forms",
   "main": "src/index.js",
   "scripts": {
     "test": "./node_modules/.bin/jest --detectOpenHandles --forceExit",
