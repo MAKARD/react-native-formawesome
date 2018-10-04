@@ -5,3 +5,11 @@
 
 
 React-Native UI lib for [react-formawesome-core](https://github.com/MAKARD/react-formawesome-core).
+
+
+# Content
+
+ - [Form](./docs/Form.md)
+ - [FormGroup](./docs/FormGroup.md)
+ - [Input](./docs/Input.md)
+ - [SubmitButton](./docs/SubmitButton.md)
