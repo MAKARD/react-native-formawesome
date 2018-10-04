@@ -7,7 +7,7 @@ import type { FormGroupContextInterface } from "react-formawesome-core";
 import { InputPropTypes, InputDefaultProps } from "./InputProps";
 import type { InputProps } from "./InputProps";
 
-export class Input extends React.Component<InputProps> {
+export class Input extends React.PureComponent<InputProps> {
     static propTypes = InputPropTypes;
     static defaultProps = InputDefaultProps;
 

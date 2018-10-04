@@ -17,7 +17,15 @@
     "url": "https://github.com/MAKARD/react-native-formawesome"
   },
   "keywords": [
-    "-"
+    "ui",
+    "native",
+    "react",
+    "react-native",
+    "validation",
+    "class-validator",
+    "validate.js",
+    "form",
+    "react-formawesome-core"
   ],
   "author": "Makarenko Dmitry",
   "license": "UNLICENSED",

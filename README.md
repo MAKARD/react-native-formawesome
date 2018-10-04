@@ -20,3 +20,4 @@ npm install --save-dev react-native-formawesome
  - [FormGroup](./docs/FormGroup.md)
  - [Input](./docs/Input.md)
  - [SubmitButton](./docs/SubmitButton.md)
+ - [Select](./docs/Select.md)

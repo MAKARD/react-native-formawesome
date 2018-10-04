@@ -8,7 +8,7 @@ import type { SubmitButtonProps } from "./SubmitButtonProps";
 
 import { SubmitButtonPropTypes } from "./SubmitButtonProps";
 
-export class SubmitButton extends React.Component<SubmitButtonProps> {
+export class SubmitButton extends React.PureComponent<SubmitButtonProps> {
     static propTypes = SubmitButtonPropTypes;
 
     render(): React.Node {

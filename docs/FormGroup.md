@@ -8,9 +8,9 @@ Wrapper component for user-interactive elements (input / select ..ets).
 
 ### Props
 
-`FormGroup` contains [View](https://facebook.github.io/react-native/docs/view.html) component from [react-native](https://github.com/facebook/react-native) lib. All props for `View` valid for `Form`.
+`FormGroup` contains [View](https://facebook.github.io/react-native/docs/view.html) component from [react-native](https://github.com/facebook/react-native) lib. All props for `View` are valid for `Form`.
 
-Also `FormGroup` represents [FormGroupProvider](https://github.com/MAKARD/react-formawesome-core/blob/master/docs/FormGroupProvider.md) from [react-formawesome-core](https://github.com/MAKARD/react-formawesome-core) package. All props for `FormGroupProvider` valid for `FormGroup`.
+Also `FormGroup` represents [FormGroupProvider](https://github.com/MAKARD/react-formawesome-core/blob/master/docs/FormGroupProvider.md) from [react-formawesome-core](https://github.com/MAKARD/react-formawesome-core) package. All props for `FormGroupProvider` are valid for `FormGroup`.
 
 ## Example
 
