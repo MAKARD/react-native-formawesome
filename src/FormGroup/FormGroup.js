@@ -6,7 +6,7 @@ import { FormGroupProvider } from "react-formawesome-core";
 import { FormGroupPropTypes } from "./FormGroupProps";
 import type { FormGroupProps } from "./FormGroupProps";
 
-export class FormGroup extends React.Component<FormGroupProps> {
+export class FormGroup extends React.PureComponent<FormGroupProps> {
     static propTypes = FormGroupPropTypes;
 
     render(): React.Node {

@@ -8,11 +8,11 @@ Button for submitting form.
 
 ### Props
 
-`SubmitButton` contains [TouchableOpacity](https://facebook.github.io/react-native/docs/touchableopacity) component from [react-native](https://github.com/facebook/react-native) lib. All props for `TouchableOpacity` valid for `SubmitButton`.
+`SubmitButton` contains [TouchableOpacity](https://facebook.github.io/react-native/docs/touchableopacity) component from [react-native](https://github.com/facebook/react-native) lib. All props for `TouchableOpacity` are valid for `SubmitButton`.
 
 
 Provide own props:
- - `loadingComponent` - component that will render while form submitting
+ - `loadingComponent` - component that will render while form submitting. `Optional`.
 
 ## Example
 

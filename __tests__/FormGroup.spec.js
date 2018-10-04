@@ -10,14 +10,18 @@ class Model {
     name = undefined;
 }
 
-test("Should render correctly", () => {
-  const tree = renderer.create(
-    <Form onSubmit={() => undefined} validator={new ModelValidator(Model)}>
-        <FormGroup attribute="name">
-            <View />
-        </FormGroup>
-    </Form>
-  ).toJSON();
+describe("FormGroup", () => {
 
-  expect(tree).toMatchSnapshot();
+    test("Should render correctly", () => {
+    const tree = renderer.create(
+        <Form onSubmit={() => undefined} validator={new ModelValidator(Model)}>
+            <FormGroup attribute="name">
+                <View />
+            </FormGroup>
+        </Form>
+    ).toJSON();
+
+    expect(tree).toMatchSnapshot();
+    });
+
 });

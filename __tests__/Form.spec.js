@@ -10,12 +10,16 @@ class Model {
     name = undefined;
 }
 
-test("Should render correctly", () => {
-  const tree = renderer.create(
-    <Form onSubmit={() => undefined} validator={new ModelValidator(Model)}>
-        <View />
-    </Form>
-  ).toJSON();
+describe("Form", () => {
 
-  expect(tree).toMatchSnapshot();
+  test("Should render correctly", () => {
+    const tree = renderer.create(
+      <Form onSubmit={() => undefined} validator={new ModelValidator(Model)}>
+          <View />
+      </Form>
+    ).toJSON();
+
+    expect(tree).toMatchSnapshot();
+  });
+
 });

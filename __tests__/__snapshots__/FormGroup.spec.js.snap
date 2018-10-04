@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Should render correctly 1`] = `
+exports[`FormGroup Should render correctly 1`] = `
 <View>
   <View>
     <View />
