@@ -49,16 +49,16 @@
     "pre-commit": "^1.2.2",
     "prop-types": "^15.6.2",
     "react": "^16.5.2",
+    "react-formawesome-core": "0.0.1-5",
     "react-native": "^0.57.1",
     "react-test-renderer": "^16.5.2",
-    "react-formawesome-core": "^0.0.1-4",
     "schedule": "^0.4.0"
   },
   "peerDependencies": {
     "react": "^16.5.2",
     "prop-types": "^15.6.2",
     "react-native": "^0.57.1",
-    "react-formawesome-core": "^0.0.1-4"
+    "react-formawesome-core": "^0.0.1-5"
   },
   "jest": {
     "notify": true,
