@@ -8,8 +8,8 @@ export interface InputProps extends TextInputProps {
 }
 
 export const InputPropTypes = {
-    onFocusStyles: PropTypes.object,
-    onErrorStyles: PropTypes.object
+    onFocusStyles: PropTypes.any,
+    onErrorStyles: PropTypes.any
 };
 
 export const InputDefaultProps = {
