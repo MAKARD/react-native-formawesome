@@ -13,7 +13,7 @@ export interface SelectProps extends PickerProps {
 }
 
 export const SelectPropTypes = {
-    onErrorStyles: PropTypes.object,
+    onErrorStyles: PropTypes.any,
 
     options: PropTypes.arrayOf(PropTypes.shape({
         value: PropTypes.oneOfType([PropTypes.string, PropTypes.number, PropTypes.bool]).isRequired,

@@ -3,7 +3,13 @@
 exports[`Select Should render correctly 1`] = `
 <View>
   <View>
-    <View>
+    <View
+      style={
+        Array [
+          undefined,
+        ]
+      }
+    >
       <RCTPicker
         items={
           Array [
