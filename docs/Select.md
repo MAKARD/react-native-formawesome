@@ -11,11 +11,13 @@ User-interactive component.
 `Select` contains [Picker](https://facebook.github.io/react-native/docs/picker) component from [react-native](https://github.com/facebook/react-native) lib. All props for `Picker` are valid for `Select`.
 
 *`Select` provide value to `Picker` by itself, you can't set it manually*
-*`Select` provide on change `Picker` by itself, you can intercept it but you can't take control on value*
+
+*`Select` provide on change to `Picker` by itself, you can intercept it but you can't take control on value*
+
 *`Select` does't have `onBlur` and `onFocus` events*
 
 
-Also `Select` via props represents [FormGroupProvider context](https://github.com/MAKARD/react-formawesome-core/blob/master/docs/FormGroupProvider.md#context) from [react-formawesome-core](https://github.com/MAKARD/react-formawesome-core) package.
+Also `Select` (via props) represents [FormGroupProvider context](https://github.com/MAKARD/react-formawesome-core/blob/master/docs/FormGroupProvider.md#context) from [react-formawesome-core](https://github.com/MAKARD/react-formawesome-core) package.
 
 Provide own props:
  - `options` - values that should be rendered in `Select` as `Picker.Item`. `Required`.
