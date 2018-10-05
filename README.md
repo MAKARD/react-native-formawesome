@@ -5,6 +5,8 @@
 
 React-Native UI lib for [react-formawesome-core](https://github.com/MAKARD/react-formawesome-core).
 
+# [Live example](https://snack.expo.io/@makard/react-native-formawesome)
+
 # Installation
 
 ## Via NPM
