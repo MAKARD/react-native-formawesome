@@ -69,6 +69,7 @@ export class Input extends React.PureComponent<InputProps> {
             };
         }
 
+        /* eslint-disable-next-line */
         console.log(style);
 
         return style;
