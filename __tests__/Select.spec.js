@@ -53,12 +53,11 @@ describe("Select", () => {
                   </FormGroup>
               </Form>
           );
-      
-      
-          expect(tree.root.findByType(Select).instance.getStyle({error: "error"}))
-              .toMatchObject({
-                  backgroundColor: "#fff",
-                  paddingLeft: 0,
-              });
+     
+        expect(tree.root.findByType(Select).instance.getStyle({error: "error"}))
+            .toContainEqual({ backgroundColor: "#fff" });
+
+        expect(tree.root.findByType(Select).instance.getStyle({error: "error"}))
+            .toContainEqual({ paddingLeft: 0 });
       });
 });

@@ -1,6 +1,6 @@
 {
     "presets": [
         "react-native",
-        "flow"
+        "module:metro-react-native-babel-preset"
     ]
 }

@@ -20,3 +20,4 @@ node_modules/
 __tests__
 coverage
 .eslintignore
+jest-prepropcessor.js

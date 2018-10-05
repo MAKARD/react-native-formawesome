@@ -1,10 +1,10 @@
 {
   "name": "react-native-formawesome",
-  "version": "0.0.1-5-dev",
+  "version": "0.0.1-6-dev",
   "description": "React-Native UI lib for validation forms",
   "main": "src/index.js",
   "scripts": {
-    "test": "./node_modules/.bin/jest --detectOpenHandles --forceExit",
+    "test": "./node_modules/.bin/jest --no-cache --detectOpenHandles --forceExit",
     "build": "npm run flow",
     "lint": "./node_modules/.bin/eslint .",
     "flow": "./node_modules/.bin/flow",
@@ -37,8 +37,8 @@
     "@babel/core": "^7.1.2",
     "babel-core": "^7.0.0-bridge.0",
     "babel-eslint": "^10.0.1",
-    "babel-preset-flow": "^6.23.0",
-    "babel-preset-react-native": "^4.0.1",
+    "babel-jest": "^23.6.0",
+    "babel-preset-react-native": "^5.0.2",
     "codecov": "^3.1.0",
     "eslint": "^5.6.1",
     "eslint-plugin-babel": "^5.2.1",
@@ -47,10 +47,11 @@
     "flow-bin": "^0.82.0",
     "flow-typed": "^2.5.1",
     "jest": "^23.6.0",
+    "metro-react-native-babel-preset": "^0.47.1",
     "pre-commit": "^1.2.2",
     "prop-types": "^15.6.2",
     "react": "^16.5.2",
-    "react-formawesome-core": "0.0.1-5",
+    "react-formawesome-core": "0.0.1-5-dev",
     "react-native": "^0.57.1",
     "react-test-renderer": "^16.5.2",
     "schedule": "^0.4.0"
@@ -59,7 +60,7 @@
     "react": "^16.5.2",
     "prop-types": "^15.6.2",
     "react-native": "^0.57.1",
-    "react-formawesome-core": "^0.0.1-5"
+    "react-formawesome-core": "^0.0.1-5-dev"
   },
   "jest": {
     "notify": true,
@@ -76,7 +77,10 @@
       "/core.js",
       "/core-types.js",
       "/node_modules/"
-    ]
+    ],
+    "transform": {
+      "^.+\\.js$": "<rootDir>/jest-preprocessor.js"
+    }
   },
   "pre-commit": [
     "stage",

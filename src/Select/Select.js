@@ -48,14 +48,9 @@ export class Select extends React.PureComponent<SelectProps> {
     }
 
     getStyle = (context: FormGroupContextInterface) => {
-        let style = this.props.style;
+        const style = [this.props.style];
 
-        if (context.error) {
-            style = {
-                ...style,
-                ...this.props.onErrorStyles
-            };
-        }
+        context.error && style.push(this.props.onErrorStyles);
 
         return style;
     }

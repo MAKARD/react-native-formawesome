@@ -65,16 +65,19 @@ describe("Input", () => {
         );
 
         expect(tree.root.findByType(Input).instance.getStyle({isFocused: true}))
-            .toMatchObject({
-                paddingLeft: 0,
-                flex: 1
-            });
+            .toContainEqual({ paddingLeft: 0 });
+
+        expect(tree.root.findByType(Input).instance.getStyle({isFocused: true}))
+            .toContainEqual({ flex: 1 });
+
         expect(tree.root.findByType(Input).instance.getStyle({isFocused: true, error: "error"}))
-            .toMatchObject({
-                backgroundColor: "#fff",
-                paddingLeft: 0,
-                flex: 1
-            });
+            .toContainEqual({ backgroundColor: "#fff" });
+
+        expect(tree.root.findByType(Input).instance.getStyle({isFocused: true, error: "error"}))
+            .toContainEqual({ paddingLeft: 0 });
+
+        expect(tree.root.findByType(Input).instance.getStyle({isFocused: true, error: "error"}))
+            .toContainEqual({ flex: 1 });
     });
 
 });
