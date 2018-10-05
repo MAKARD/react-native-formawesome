@@ -1,6 +1,6 @@
 {
   "name": "react-native-formawesome",
-  "version": "0.0.1-4",
+  "version": "0.0.1-4-dev",
   "description": "React-Native UI lib for validation forms",
   "main": "src/index.js",
   "scripts": {
