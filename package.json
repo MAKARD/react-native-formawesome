@@ -34,7 +34,8 @@
   },
   "homepage": "https://github.com/MAKARD/react-native-formawesome",
   "devDependencies": {
-    "babel-core": "^6.26.3",
+    "@babel/core": "^7.1.2",
+    "babel-core": "^7.0.0-bridge.0",
     "babel-eslint": "^10.0.1",
     "babel-preset-flow": "^6.23.0",
     "babel-preset-react-native": "^4.0.1",
@@ -80,8 +81,5 @@
   "pre-commit": [
     "stage",
     "test"
-  ],
-  "dependencies": {
-    "@babel/runtime": "^7.1.2"
-  }
+  ]
 }
