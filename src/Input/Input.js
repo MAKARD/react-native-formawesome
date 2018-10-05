@@ -69,6 +69,8 @@ export class Input extends React.PureComponent<InputProps> {
             };
         }
 
+        console.log(style);
+
         return style;
     }
 }
