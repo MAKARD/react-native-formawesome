@@ -28,7 +28,7 @@
     "react-formawesome-core"
   ],
   "author": "Makarenko Dmitry",
-  "license": "UNLICENSED",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/MAKARD/react-native-formawesome/issues"
   },
