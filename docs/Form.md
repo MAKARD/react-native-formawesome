@@ -15,7 +15,7 @@ Also `Form` represents [FormProvider](https://github.com/MAKARD/react-formawesom
 
 ```jsx
 <Form 
-    onSubmit={(values) => await someRequest(values)}
+    onSubmit={async (values) => await someRequest(values)}
     validator={new SchemaValidator(ExampleSchema)}
     errorParser={(error) => myCustomParser(error)}
 >
