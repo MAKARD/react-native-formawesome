@@ -18,6 +18,6 @@ export class ErrorTip extends React.Component<TextProps> {
             return null;
         }
 
-        return <Text {...this.props}>{context.error.details}</Text>;
+        return <Text {...this.props}>{context.error}</Text>;
     }
 }
