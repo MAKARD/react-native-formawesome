@@ -13,15 +13,15 @@ class Model {
 describe("Input", () => {
 
     test("Should render correctly", () => {
-    const tree = renderer.create(
-        <Form onSubmit={() => undefined} validator={new ModelValidator(Model)}>
-            <FormGroup attribute="name">
-                <Input />
-            </FormGroup>
-        </Form>
-    ).toJSON();
+        const tree = renderer.create(
+            <Form onSubmit={() => undefined} validator={new ModelValidator(Model)}>
+                <FormGroup attribute="name">
+                    <Input />
+                </FormGroup>
+            </Form>
+        ).toJSON();
 
-    expect(tree).toMatchSnapshot();
+        expect(tree).toMatchSnapshot();
     });
 
     test("Should call props events if they passed", () => {
