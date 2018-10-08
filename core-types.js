@@ -52,7 +52,7 @@ declare module "react-formawesome-core" {
     }
     
     declare export interface FormGroupContextInterface {
-        error?: ?{ details: string; attribute: string };
+        error?: ?string;
         value: any;
     
         isFocused: boolean;

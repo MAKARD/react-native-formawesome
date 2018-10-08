@@ -9,7 +9,9 @@ exports[`ErrorTip Should render correctly 1`] = `
 exports[`ErrorTip Should render error text if error exist 1`] = `
 <View>
   <View>
-    <Text />
+    <Text>
+      test
+    </Text>
   </View>
 </View>
 `;
