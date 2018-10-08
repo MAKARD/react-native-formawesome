@@ -13,15 +13,15 @@ class Model {
 describe("FormGroup", () => {
 
     test("Should render correctly", () => {
-    const tree = renderer.create(
-        <Form onSubmit={() => undefined} validator={new ModelValidator(Model)}>
-            <FormGroup attribute="name">
-                <View />
-            </FormGroup>
-        </Form>
-    ).toJSON();
+        const tree = renderer.create(
+            <Form onSubmit={() => undefined} validator={new ModelValidator(Model)}>
+                <FormGroup attribute="name">
+                    <View />
+                </FormGroup>
+            </Form>
+        ).toJSON();
 
-    expect(tree).toMatchSnapshot();
+        expect(tree).toMatchSnapshot();
     });
 
 });

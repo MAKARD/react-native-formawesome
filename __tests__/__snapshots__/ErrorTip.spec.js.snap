@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ErrorTip Should render correctly 1`] = `
+<View>
+  <View />
+</View>
+`;
+
+exports[`ErrorTip Should render error text if error exist 1`] = `
+<View>
+  <View>
+    <Text />
+  </View>
+</View>
+`;
