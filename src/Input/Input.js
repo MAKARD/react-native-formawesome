@@ -11,6 +11,8 @@ export class Input extends React.PureComponent<InputProps> {
     static propTypes = InputPropTypes;
     static defaultProps = InputDefaultProps;
 
+    registered = false;
+
     render(): React.Node {
         return (
             <FormGroupContext.Consumer>
@@ -24,12 +26,13 @@ export class Input extends React.PureComponent<InputProps> {
 
         return (
             <TextInput
+                {...inputProps}
+                ref={this.handleRegisterElementControll(context)}
                 onChangeText={this.getHandleChange(context)}
                 onFocus={this.getHandleFocus(context)}
                 onBlur={this.getHandleBlur(context)}
                 style={this.getStyle(context)}
                 value={context.value}
-                {...inputProps}
             />
         );
     }
@@ -60,4 +63,19 @@ export class Input extends React.PureComponent<InputProps> {
 
         return style;
     }
+
+    handleRegisterElementControll = (context: FormGroupContextInterface) => (element: any): void => {
+        if (!element) {
+            return context.unregisterElement();
+        }
+
+        if (this.registered) {
+            return;
+        }
+
+        context.registerElement(element);
+
+        this.registered = true;
+    }
+
 }

@@ -42,15 +42,18 @@ declare module "react-formawesome-core" {
     declare export interface FormContextInterface {
         modelErrors: UncertainObject;
         modelValues: UncertainObject;
-    
+
         loading: boolean;
         hasErrors: boolean;
-    
+
         onSubmit: () => Promise<void>;
         onValidate: (groups?: ?Array<string>) => Promise<void>;
         setModelValue: (attribute: string, value: any) => void;
+
+        unregisterElement: (attribute: string) => void;
+        registerElement: (attribute: string, element: any) => void;
     }
-    
+
     declare export interface FormGroupContextInterface {
         error?: ?string;
         value: any;
@@ -60,11 +63,13 @@ declare module "react-formawesome-core" {
         onChange: (value: any) => void | Promise<void>;
         onFocus: () => void | Promise<void>;
         onBlur: () => void | Promise<void>;
+
+        registerElement: (element: any) => void;
+        unregisterElement: () => void;
     }
-    
+
     declare export var FormContext: React$Context<FormContextInterface>;
     declare export var FormGroupContext: React$Context<FormGroupContextInterface>;
-    
 
     declare export var FormProviderPropTypes: $Subtype<{[_: $Keys<FormProviderProps>]: any}>;
     declare export var FormGroupProviderPropTypes: $Subtype<{[_: $Keys<FormGroupProviderProps>]: any}>;
