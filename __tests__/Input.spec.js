@@ -80,4 +80,44 @@ describe("Input", () => {
             .toContainEqual({ flex: 1 });
     });
 
+    test("Should register element", () => {
+          const tree = renderer.create(
+            <Form onSubmit={() => undefined} validator={new ModelValidator(Model)}>
+                <FormGroup attribute="name">
+                    <Input />
+                </FormGroup>
+            </Form>
+        );
+
+        tree.root.findByType(Input).instance.unregister = undefined;
+
+        let registered = false;
+        const action = tree.root.findByType(Input).instance.handleRegisterElementControl({
+            registerElement: () => registered = true
+        });
+
+        action();
+        expect(registered).toBeFalsy();
+
+        action({});
+        expect(registered).toBeTruthy();
+    });
+
+    test("Should unregister on unmount", () => {
+        const tree = renderer.create(
+            <Form onSubmit={() => undefined} validator={new ModelValidator(Model)}>
+                <FormGroup attribute="name">
+                    <Input />
+                </FormGroup>
+            </Form>
+        );
+
+        let unregistered = false;
+        tree.root.findByType(Input).instance.unregister = () => unregistered = true;
+
+        tree.root.findByType(Input).instance.componentWillUnmount();
+
+        expect(unregistered).toBeTruthy();
+    });
+
 });

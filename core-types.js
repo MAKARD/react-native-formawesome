@@ -29,7 +29,8 @@ declare module "react-formawesome-core" {
     declare export interface FormProviderProps {
         validator: Validator;
         onSubmit: () => Promise<any>;
-        errorParser?: ?(error: any) => boolean;
+        errorParser?: ?(error: any) => Array<{details: string, attribute: string}> | any;
+        handleUnparsedErrors?: ?boolean;
     }
 
     declare export type Event = "change" | "focus" | "blur";
@@ -44,6 +45,7 @@ declare module "react-formawesome-core" {
         modelValues: UncertainObject;
 
         loading: boolean;
+        unparsedError?: ?any;
         hasErrors: boolean;
 
         onSubmit: () => Promise<void>;
@@ -68,6 +70,10 @@ declare module "react-formawesome-core" {
         unregisterElement: () => void;
     }
 
+    declare export interface UnparsedErrorProviderProps {
+        children: (error?: any) => React$Node;
+    }
+
     declare export var FormContext: React$Context<FormContextInterface>;
     declare export var FormGroupContext: React$Context<FormGroupContextInterface>;
 
@@ -78,6 +84,6 @@ declare module "react-formawesome-core" {
     declare export var SchemaValidator: Class<InstantiableValidator<Schema>>;
 
     declare export var FormProvider: Class<React$Component<FormProviderProps>>;
-
     declare export var FormGroupProvider: Class<React$Component<FormGroupProviderProps>>;
+    declare export var UnparsedErrorProvider: Class<React$Component<UnparsedErrorProviderProps>>;
 }
