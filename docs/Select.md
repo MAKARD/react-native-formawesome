@@ -14,7 +14,7 @@ User-interactive component.
 
 *`Select` provide on change to `Picker` by itself, you can intercept it but you can't take control on value*
 
-*`Select` does't have `onBlur` and `onFocus` events*
+*`Select` doesn't have `onBlur` and `onFocus` events*
 
 
 Also `Select` (via props) represents [FormGroupProvider context](https://github.com/MAKARD/react-formawesome-core/blob/master/docs/FormGroupProvider.md#context) from [react-formawesome-core](https://github.com/MAKARD/react-formawesome-core) package.
