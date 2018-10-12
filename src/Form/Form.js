@@ -10,13 +10,14 @@ export class Form extends React.Component<FormProps> {
     static propTypes = FormPropTypes;
     
     render(): React.Node {
-        const { onSubmit, errorParser, validator, ...viewProps } = this.props;
+        const { onSubmit, errorParser, validator, handleUnparsedErrors, ...viewProps } = this.props;
 
         return (
             <FormProvider
                 onSubmit={onSubmit}
-                validator={validator} 
+                validator={validator}
                 errorParser={errorParser}
+                handleUnparsedErrors={handleUnparsedErrors}
              >
               <View {...viewProps}>
                 {this.props.children}

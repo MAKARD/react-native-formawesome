@@ -24,3 +24,4 @@ npm install --save-dev react-native-formawesome
  - [SubmitButton](./docs/SubmitButton.md)
  - [Select](./docs/Select.md)
  - [ErrorTip](./docs/ErrorTip.md)
+ - [UnparsedErrorContainer](./docs/UnparsedErrorContainer.md)
