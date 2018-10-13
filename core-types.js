@@ -15,6 +15,7 @@ declare module "react-formawesome-core" {
         modelErrors: UncertainObject;
         modelAttributes: Array<string>;
 
+        clear: () => void;
         dropToDefaults: () => void;
         setDefaults: (defaults: UncertainObject) => void;
         validate: (groups?: ?Array<string>) => Promise<void>;
@@ -35,9 +36,11 @@ declare module "react-formawesome-core" {
 
     declare export type Event = "change" | "focus" | "blur";
 
+    declare type ValidateOn = Event | (values: UncertainObject, errors: UncertainObject) => boolean;
+
     declare export interface FormGroupProviderProps {
         attribute: string;
-        validateOn?: ?Event | ?(values: UncertainObject, errors: UncertainObject) => boolean;
+        validateOn?: ?ValidateOn | ?Array<ValidateOn>;
     }
 
     declare export interface FormContextInterface {
