@@ -24,4 +24,20 @@ describe("UnparsedErrorContainer", () => {
     expect(tree).toMatchSnapshot();
   });
 
+  test("Should render error view if error exist", () => {
+    const render = renderer.create(
+      <Form onSubmit={() => undefined} validator={new ModelValidator(Model)}>
+          <UnparsedErrorContainer>
+            {() => <View />}
+          </UnparsedErrorContainer>
+      </Form>
+    );
+
+    const errorTree = renderer.create(
+      render.root.findByType(UnparsedErrorContainer).instance.renderChildren("")
+    ).toJSON();
+
+    expect(errorTree).toMatchSnapshot();
+  });
+
 });
