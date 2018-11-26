@@ -32,6 +32,8 @@ declare module "react-formawesome-core" {
         onSubmit: () => Promise<any>;
         errorParser?: ?(error: any) => Array<{details: string, attribute: string}> | any;
         handleUnparsedErrors?: ?boolean;
+        afterSubmit?: ?(hasErrors: boolean) => void;
+        beforeSubmit?: ?() => void;
     }
 
     declare export type Event = "change" | "focus" | "blur";
