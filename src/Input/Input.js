@@ -41,14 +41,14 @@ export class Input extends React.PureComponent<InputProps> {
         );
     }
 
-    getHandleFocus = (context: FormGroupContextInterface) => (): void => {
-        this.props.onFocus && this.props.onFocus();
+    getHandleFocus = (context: FormGroupContextInterface) => (event: any): void => {
+        this.props.onFocus && this.props.onFocus(event);
 
         context.onFocus();
     }
 
-    getHandleBlur= (context: FormGroupContextInterface) => (): void => {
-        this.props.onBlur && this.props.onBlur();
+    getHandleBlur= (context: FormGroupContextInterface) => (event: any): void => {
+        this.props.onBlur && this.props.onBlur(event);
 
         context.onBlur();
     }
