@@ -19,6 +19,7 @@ Also `Input` via props represents [FormGroupProvider context](https://github.com
 Provide own props:
  - `onErrorStyles` - styles that applies after failed validation. `Optional`.
  - `onFocusStyles` - styles that applies when input have focus. `Optional`.
+ - `nativeRef` - same as React `ref` prop. `Optional`.
 
 ## Example
 

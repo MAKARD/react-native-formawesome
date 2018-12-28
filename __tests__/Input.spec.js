@@ -84,7 +84,7 @@ describe("Input", () => {
           const tree = renderer.create(
             <Form onSubmit={() => undefined} validator={new ModelValidator(Model)}>
                 <FormGroup attribute="name">
-                    <Input />
+                    <Input nativeRef={() => {}}/>
                 </FormGroup>
             </Form>
         );

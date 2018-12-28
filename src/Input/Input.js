@@ -69,6 +69,8 @@ export class Input extends React.PureComponent<InputProps> {
     }
 
     handleRegisterElementControl = (context: FormGroupContextInterface) => (element: any): void => {
+        this.props.nativeRef && this.props.nativeRef(element);
+
         if (!element || this.unregister) {
             return;
         }
