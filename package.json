@@ -37,7 +37,7 @@
     "@babel/core": "^7.1.2",
     "babel-core": "^7.0.0-bridge.0",
     "babel-eslint": "^10.0.1",
-    "babel-jest": "^23.6.0",
+    "babel-jest": "^24.1.0",
     "babel-preset-react-native": "^5.0.2",
     "codecov": "^3.1.0",
     "eslint": "^5.6.1",
@@ -46,15 +46,15 @@
     "eslint-plugin-react": "^7.11.1",
     "flow-bin": "^0.82.0",
     "flow-typed": "^2.5.1",
-    "jest": "^23.6.0",
+    "jest": "^24.1.0",
     "metro-react-native-babel-preset": "^0.47.1",
     "pre-commit": "^1.2.2",
     "prop-types": "^15.6.2",
-    "react": "^16.5.2",
+    "react": "^16.8.2",
     "react-formawesome-core": "^1.0.0-rc10",
-    "react-native": "^0.57.1",
+    "react-native": "^0.58.4",
     "react-test-renderer": "^16.5.2",
-    "schedule": "^0.4.0"
+    "schedule": "0.4.0"
   },
   "peerDependencies": {
     "react": "^16.5.2",
