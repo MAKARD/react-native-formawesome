@@ -58,5 +58,4 @@ describe("SubmitButton", () => {
         tree.root.findByType(SubmitButton).instance.getHandleSubmit({onSubmit: () => {}})();
         expect(onPressTriggered).toBeTruthy();
     });
-
 });

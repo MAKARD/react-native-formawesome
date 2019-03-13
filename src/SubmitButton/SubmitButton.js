@@ -6,10 +6,11 @@ import type { FormContextInterface } from "react-formawesome-core";
 
 import type { SubmitButtonProps } from "./SubmitButtonProps";
 
-import { SubmitButtonPropTypes } from "./SubmitButtonProps";
+import { SubmitButtonPropTypes, SubmitButtonDefaultProps } from "./SubmitButtonProps";
 
 export class SubmitButton extends React.PureComponent<SubmitButtonProps> {
     static propTypes = SubmitButtonPropTypes;
+    static defaultProps = SubmitButtonDefaultProps;
 
     render(): React.Node {
         return (
@@ -20,7 +21,7 @@ export class SubmitButton extends React.PureComponent<SubmitButtonProps> {
     }
 
     renderChildren = (context: FormContextInterface): React.Node => {
-        const { loadingComponent, onPress, ...touchableOpacityProps } = this.props;
+        const { loadingComponent, onPress, disableOnSubmit, ...touchableOpacityProps } = this.props;
 
         return (
             <TouchableOpacity 
@@ -34,6 +35,10 @@ export class SubmitButton extends React.PureComponent<SubmitButtonProps> {
 
     getHandleSubmit = (context: FormContextInterface) => (event: any): void => {
         this.props.onPress && this.props.onPress(event);
+
+        if (this.props.disableOnSubmit && context.loading) {
+            return;
+        }
 
         context.onSubmit();
     }
