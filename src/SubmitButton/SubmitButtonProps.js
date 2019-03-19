@@ -6,9 +6,15 @@ import PropTypes from "prop-types";
 export interface SubmitButtonProps extends TouchableOpacityProps {
     loadingComponent?: ?React.Node;
     children: React.Node;
+    disableOnSubmit?: ?boolean;
 }
 
 export const SubmitButtonPropTypes = {
     children: PropTypes.node.isRequired,
-    loadingComponent: PropTypes.node
+    loadingComponent: PropTypes.node,
+    disableOnSubmit: PropTypes.bool
+};
+
+export const SubmitButtonDefaultProps = {
+    disableOnSubmit: true
 };
