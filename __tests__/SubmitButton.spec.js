@@ -39,14 +39,14 @@ describe("SubmitButton", () => {
             </Form>
         );
 
-        renderer.create(tree.root.findByType(SubmitButton).instance.renderChildren({loading: true}))
+        renderer.create(tree.root.findByType(SubmitButton).instance.renderChildren({ loading: true }))
 
         expect(loadingRendered).toBeTruthy();
     });
 
     test("Should call onPress prop if it passed", () => {
         let onPressTriggered = false;
-    
+
         const tree = renderer.create(
             <Form onSubmit={() => undefined} validator={new ModelValidator(Model)}>
                 <SubmitButton onPress={() => onPressTriggered = true}>
@@ -54,8 +54,25 @@ describe("SubmitButton", () => {
                 </SubmitButton>
             </Form>
         );
-    
-        tree.root.findByType(SubmitButton).instance.getHandleSubmit({onSubmit: () => {}})();
+
+        tree.root.findByType(SubmitButton).instance.getHandleSubmit({ onSubmit: () => { } })();
         expect(onPressTriggered).toBeTruthy();
+    });
+
+    test("Should not call submit if context.loading && disableOnSubmit", () => {
+        const tree = renderer.create(
+            <Form onSubmit={() => undefined} validator={new ModelValidator(Model)}>
+                <SubmitButton onPress={() => onPressTriggered = true}>
+                    <Text>Test</Text>
+                </SubmitButton>
+            </Form>
+        );
+
+        const context = {
+            onSubmit: () => { },
+            loading: true
+        };
+
+        tree.root.findByType(SubmitButton).instance.getHandleSubmit(context)();
     });
 });
