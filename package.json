@@ -1,6 +1,6 @@
 {
   "name": "react-native-formawesome",
-  "version": "1.0.0-rc10",
+  "version": "1.0.1",
   "description": "React-Native UI lib for validation forms",
   "main": "src/index.js",
   "scripts": {
@@ -51,8 +51,8 @@
     "pre-commit": "^1.2.2",
     "prop-types": "^15.6.2",
     "react": "^16.8.2",
-    "react-formawesome-core": "^1.0.0-rc10",
-    "react-native": "^0.58.4",
+    "react-formawesome-core": "^1.0.1",
+    "react-native": "^0.59.9",
     "react-test-renderer": "^16.5.2",
     "schedule": "0.4.0"
   },
@@ -60,7 +60,7 @@
     "react": "^16.5.2",
     "prop-types": "^15.6.2",
     "react-native": "^0.57.1",
-    "react-formawesome-core": "^1.0.0-rc10"
+    "react-formawesome-core": "^1.0.1"
   },
   "jest": {
     "notify": true,

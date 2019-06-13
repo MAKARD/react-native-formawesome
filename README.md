@@ -1,4 +1,4 @@
-# React-Native Formawesome (Under development)
+# React-Native Formawesome
 
 [![Build Status](https://api.travis-ci.org/MAKARD/react-native-formawesome.svg?branch=master)](https://travis-ci.org/MAKARD/react-native-formawesome)
 [![Code coverage](https://codecov.io/gh/MAKARD/react-native-formawesome/branch/master/graphs/badge.svg)](https://codecov.io/gh/MAKARD/react-native-formawesome/branch/master)
@@ -12,8 +12,8 @@ React-Native UI lib for [react-formawesome-core](https://github.com/MAKARD/react
 ## Via NPM
 
 ```bash
-npm install --save-dev react-formawesome-core
-npm install --save-dev react-native-formawesome
+npm install --save-dev react-formawesome-core@latest
+npm install --save-dev react-native-formawesome@latest
 ```
 
 # Content

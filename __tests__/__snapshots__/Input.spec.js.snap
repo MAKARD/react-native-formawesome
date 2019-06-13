@@ -10,6 +10,7 @@ exports[`Input Should render correctly 1`] = `
       onErrorStyles={Object {}}
       onFocus={[Function]}
       onFocusStyles={Object {}}
+      rejectResponderTermination={true}
       style={
         Array [
           Object {},

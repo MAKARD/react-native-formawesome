@@ -1,6 +1,5 @@
 /* eslint-disable no-undef */
 import React from "react";
-import { View } from "react-native";
 import renderer from "react-test-renderer";
 import { ModelValidator } from "react-formawesome-core";
 
