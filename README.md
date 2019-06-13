@@ -12,8 +12,8 @@ React-Native UI lib for [react-formawesome-core](https://github.com/MAKARD/react
 ## Via NPM
 
 ```bash
-npm install --save-dev react-formawesome-core
-npm install --save-dev react-native-formawesome
+npm install --save-dev react-formawesome-core@latest
+npm install --save-dev react-native-formawesome@latest
 ```
 
 # Content
