@@ -1,6 +1,6 @@
 # UnparsedErrorContainer
 
-Component for notify user about errors that cannot be applied to model.
+Component for notify user about errors which can't be applied to model.
 
 *`UnparsedErrorContainer` should be wrapped into `Form`*
 
@@ -13,9 +13,9 @@ Component for notify user about errors that cannot be applied to model.
 Own props:
  - `children` - should be a function that return valid component. `Required`
 
-*If error not exist, `UnparsedErrorContainer` will not render `children`*
+*When error isn't exist, `UnparsedErrorContainer` will not render `children`*
 
-*If `Form` prop `handleUnparsedErrors` is falsy, `UnparsedErrorContainer` will not render `children`*
+*When `Form` prop `handleUnparsedErrors` is falsy, `UnparsedErrorContainer` will not render `children`*
 
 ## Example
 
