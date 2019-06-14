@@ -10,11 +10,11 @@ User-interactive component.
 
 `Input` contains [TextInput](https://facebook.github.io/react-native/docs/textinput) component from [react-native](https://github.com/facebook/react-native) lib. All props for `TextInput` are valid for `Input`.
 
-*`Input` provide value to `TextInput` by itself, you can't set it manually*
+*`Input` provide a value to `TextInput` by itself, you can't set it manually*
 
-*`Input` provide user events to `TextInput` by itself, you can intercept that events but you can't take control on value*
+*`Input` provide user events to `TextInput` by itself, you can intercept this events, but you can't take control on the value*
 
-Also `Input` via props represents [FormGroupProvider context](https://github.com/MAKARD/react-formawesome-core/blob/master/docs/FormGroupProvider.md#context) from [react-formawesome-core](https://github.com/MAKARD/react-formawesome-core) package.
+Also `Input` represents [FormGroupProvider context](https://github.com/MAKARD/react-formawesome-core/blob/master/docs/FormGroupProvider.md#context) from [react-formawesome-core](https://github.com/MAKARD/react-formawesome-core) package.
 
 Provide own props:
  - `onErrorStyles` - styles that applies after failed validation. `Optional`.
