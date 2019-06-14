@@ -1,6 +1,6 @@
 # SubmitButton
 
-Button for submitting form.
+A button for submitting form.
 
 *`SubmitButton` should be wrapped into `Form`*
 
@@ -12,8 +12,8 @@ Button for submitting form.
 
 
 Provide own props:
- - `loadingComponent` - component that will render while form submitting. `Optional`.
- - `disableOnSubmit` - preventing the sending of an event when the previous event has not ended. `Optional`. Default `true`.
+ - `loadingComponent` - component which displaying durning form submitting. `Optional`.
+ - `disableOnSubmit` - prevent sending a new event, if some previous event isn't ended. `Optional`. Default `true`.
 
 ## Example
 
