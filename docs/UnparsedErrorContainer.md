@@ -1,6 +1,6 @@
 # UnparsedErrorContainer
 
-Component for notify user about errors which can't be applied to model.
+A component for notify the user about errors which can't be applied to model.
 
 *`UnparsedErrorContainer` should be wrapped into `Form`*
 
