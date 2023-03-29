@@ -45,7 +45,7 @@
     "eslint-plugin-flowtype": "^2.50.3",
     "eslint-plugin-react": "^7.11.1",
     "flow-bin": "^0.82.0",
-    "flow-typed": "^2.5.1",
+    "flow-typed": "^3.8.0",
     "jest": "^29.4.1",
     "metro-react-native-babel-preset": "^0.47.1",
     "pre-commit": "^1.2.2",
